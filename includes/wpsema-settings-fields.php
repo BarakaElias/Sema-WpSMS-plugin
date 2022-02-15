@@ -397,7 +397,7 @@ function wpsema_enable_woo_new_order_checkbx_callback($args){
 function wpsema_enable_woo_new_order_to_customer_checkbx_callback($args){
     $options = get_option('wpsema_woo_settings');
     $checkbox = '';
-    if(isset($options['woo_notify_new_order'])){
+    if(isset($options['woo_notify_new_order_update'])){
         $checkbox = esc_html($options['woo_notify_order_update']);
     }
 
